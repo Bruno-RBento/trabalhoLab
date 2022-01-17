@@ -229,6 +229,7 @@ void metade1metade2(int arrayOfValues[N]){
     printf("6 -> Devlucao os valores em posicoes multiplas de 3\n");
     printf("7 -> ajuda o utilizador\n");
     printf("8-> exit");
+    printf("test");
     for (int i = 0; i < 20; i++)
     {
     int result = (rand() % N);
