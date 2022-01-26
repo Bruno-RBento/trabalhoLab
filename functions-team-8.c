@@ -1,28 +1,25 @@
-#include<stdio.h>
+#include <stdio.h>
 #include <string.h>
-#include<ctype.h>
-#include<stdlib.h>
-#include<math.h>
-#include<time.h>
-
-//files on directory
-//#include "functions-team-x.c"
-//#include "functions-team-x.h"
+#include <ctype.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
 
 #define N 4
 #define PI 3.141592654
 
-int checkInputValues(char numbers[2]){
+int checkInputValues(char numbers[2])
+{
     int result;
     for (int i = 0; i < 2; i++)
     {
         if (isdigit(numbers[i]))
         {
-            //printf("var1 = |%c| is a digit\n", numbers[i]);
+            // printf("var1 = |%c| is a digit\n", numbers[i]);
         }
         else
         {
-            //printf("var1 = |%c| is not a digit\n", numbers[i]);
+            // printf("var1 = |%c| is not a digit\n", numbers[i]);
             return -1;
         }
     }
@@ -33,20 +30,20 @@ int checkInputValues(char numbers[2]){
 
     if (result < 8 || result > 29)
     {
-        //printf("the value is not correct \n");
+        // printf("the value is not correct \n");
         return -2;
         // ask again
     }
     else
     {
-        //printf("the value is correct \n");
+        // printf("the value is correct \n");
         return result;
     }
     return result;
-
 }
 
-void escreverVetor(int arrayOfValues[N]){
+void escreverVetor(int arrayOfValues[N])
+{
 
     for (int i = 0; i < N; i++)
     {
@@ -84,8 +81,9 @@ void mostrarVetor(int arrayOfValues[N])
     }
 }
 
-//Bubble sort
-void ordernarCrescente(int arrayOfValues[N]){
+// Bubble sort
+void ordernarCrescente(int arrayOfValues[N])
+{
     for (int i = 0; i < N; i++)
     {
         for (int j = 0; j < N; j++)
@@ -100,10 +98,10 @@ void ordernarCrescente(int arrayOfValues[N]){
     }
 }
 
-void SomaArray(){}
+void SomaArray() {}
 
-
-void premutacaoElementos(int arrayOfValues[N]){
+void premutacaoElementos(int arrayOfValues[N])
+{
     int matriz[N][N];
     int number = 0;
 
@@ -124,13 +122,14 @@ void premutacaoElementos(int arrayOfValues[N]){
     }
 }
 
-void randomNumber (int arrayOfValues[N]){
+void randomNumber(int arrayOfValues[N])
+{
     int result = arrayOfValues[(rand() % N)];
     printf("----%d-----", result);
 }
 
-
-void coseno2half (int arrayOfValues[N]){
+void coseno2half(int arrayOfValues[N])
+{
 
     int half = N / 2;
     double arrayCos[(N / 2)];
@@ -143,8 +142,8 @@ void coseno2half (int arrayOfValues[N]){
     }
 }
 
-
-void iDivisivel3(int arrayOfValues[N]){
+void iDivisivel3(int arrayOfValues[N])
+{
     for (int i = 0; i < N; i++)
     {
         if ((i % 3) == 0)
@@ -154,7 +153,8 @@ void iDivisivel3(int arrayOfValues[N]){
     }
 }
 
-void metade1metade2(int arrayOfValues[N]){
+void metade1metade2(int arrayOfValues[N])
+{
     for (int i = 0; i < N; i++)
     {
         printf("-------- %d ---------", i);
@@ -185,56 +185,3 @@ void metade1metade2(int arrayOfValues[N]){
         }
     }
 }
-
-    int main(int argc, char *argv[])
-{
-    //resolver o rand()
-    srand(time(NULL));
-    for (int i = 0; i < argc; i++)
-    {
-        printf("Argument: %d: %s\n", i, argv[i]);
-
-        if (!(strcmp(argv[i], "--help"))){
-                printf("thats it");
-                //here show added help
-            }
-    }
-    
-    //nao esta ler o 8 e 9 fix this
-    //premutacao nao esta a funcionar
-    //metade1metade2 resolver nao alterear o array original
-    int arrayOfValues[N];
-
-    escreverVetor(arrayOfValues);
-    mostrarVetor(arrayOfValues);
-    //printf("\n");
-    //coseno2half(arrayOfValues);
-    //ordernarCrescente(arrayOfValues);
-    //mostrarVetor(arrayOfValues);
-    //iDivisivel3(arrayOfValues);
-
-   //metade1metade2(arrayOfValues);
-
-    //mostrarVetor(arrayOfValues);
-
-
-    printf("-------------------Menu do trabalho de Labrotorio de programacao----------------");
-//parte 1
-    printf("Escolha a opcao que pretende\n");
-    printf("1 -> Devolucao do vetor ordenado\n");
-    printf("2 -> Soma da 1 metade do vetor com a 2 metade\n");
-    printf("3 -> criacao de uma matriz com a permtacao da matriz original\n");
-    printf("4 -> Calculo do coseno da 2 metade dos elementos do vetor\n");
-    printf("5 -> Retorno de um elemento aleatorio do vetor\n");
-    printf("6 -> Devlucao os valores em posicoes multiplas de 3\n");
-    printf("7 -> ajuda o utilizador\n");
-    printf("8-> exit");
-    printf("test");
-    for (int i = 0; i < 20; i++)
-    {
-    int result = (rand() % N);
-    printf("----%d-----", result);
-    }
-}
-
-
