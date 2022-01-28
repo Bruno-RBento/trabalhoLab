@@ -5,7 +5,7 @@
 #include <math.h>
 #include <time.h>
 
-#define N 4
+#define N 5
 #define PI 3.141592654
 
 int checkInputValues(char numbers[2])
@@ -13,6 +13,12 @@ int checkInputValues(char numbers[2])
     int result;
     for (int i = 0; i < 2; i++)
     {
+        // fix this number[1] == ' ';
+        if(numbers[0] == '8'){
+            return 8;
+        }else if(numbers[0]== '9'){
+            return 9;
+        }
         if (isdigit(numbers[i]))
         {
             // printf("var1 = |%c| is a digit\n", numbers[i]);
@@ -79,6 +85,7 @@ void mostrarVetor(int arrayOfValues[N])
     {
         printf("%d ", arrayOfValues[i]);
     }
+    printf("\n");
 }
 
 // Bubble sort
@@ -88,7 +95,7 @@ void ordernarCrescente(int arrayOfValues[N])
     {
         for (int j = 0; j < N; j++)
         {
-            if (arrayOfValues[i] > arrayOfValues[j])
+            if (arrayOfValues[i] < arrayOfValues[j])
             {
                 int kepper = arrayOfValues[i];
                 arrayOfValues[i] = arrayOfValues[j];
@@ -96,9 +103,31 @@ void ordernarCrescente(int arrayOfValues[N])
             }
         }
     }
+    mostrarVetor(arrayOfValues);
 }
+//for (int i = 0, j = 0; i <= N - 1 && j <= N - 1; i++, j++)
+    void SomaArray(int arrayOfValues[N])
+    {
 
-void SomaArray() {}
+        int sumarray[(N / 2)];
+        for (int i = 0, j = N / 2; i < N / 2; i++, j++)
+        {
+            if(N % 2 == 0){
+            sumarray[i] = arrayOfValues[i] + arrayOfValues[j];
+            printf("soma %d entre %d e %d\n", sumarray[i], arrayOfValues[i], arrayOfValues[j]);
+            }else{
+                //quando o numero é impar o numero que fica no meio é ignorado
+                sumarray[i] = arrayOfValues[i] + arrayOfValues[j+1];
+                printf("soma %d entre %d e %d\n", sumarray[i], arrayOfValues[i], arrayOfValues[j+1]);
+            }
+        }
+        printf("-__-__--_\n");
+        for (int i = 0; i < N/2; i++)
+        {
+            printf("%d ", sumarray[i]);
+        }
+        printf("\n");
+}
 
 void premutacaoElementos(int arrayOfValues[N])
 {
@@ -108,8 +137,6 @@ void premutacaoElementos(int arrayOfValues[N])
     int arrayElements[N];
     for (int i = 0; i < N; i++)
     {
-
-        // alterar o valor 10 para o tamanho do vetor
         matriz[i][0] = arrayOfValues[i];
 
         matriz[i][1] = arrayOfValues[rand() % N];
@@ -184,4 +211,13 @@ void metade1metade2(int arrayOfValues[N])
             continue;
         }
     }
+}
+
+int randomArray(){
+    int randArray[][20];
+    for (int i = 0; i < 20; i++)
+    {
+        //randArray[0][i] =  
+    }
+    
 }
