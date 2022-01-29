@@ -132,7 +132,7 @@ void premute(char arrayofValues[4]){
 
     escreverVetor(arrayOfValues);
     mostrarVetor(arrayOfValues);
-    SomaArray(arrayOfValues);
+    minimoMultiploComum(arrayOfValues);
     //coseno2half(arrayOfValues);
     //ordernarCrescente(arrayOfValues);
     //mostrarVetor(arrayOfValues);

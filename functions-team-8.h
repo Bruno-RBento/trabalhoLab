@@ -22,17 +22,14 @@ void iDivisivel3(int arrayOfValues[N]);
 //1
 void metade1metade2(int arrayOfValues[N]);
 
-//2 minimomultiplo Comum
+//2 minimo multiplo Comum
+void minimoMultiploComum(int arrayofValues[N]);
+// 3 matriz aleatoria de 1/20 fica 20/20
 
-//3 matriz aleatoria de 1/20 fica 20/20
+// 4 matriz trasposta da acima
 
-//4 matriz trasposta da acima
+// 5 pagina de ajuda
+    // falta fazer a pagina
 
-//5 pagina de ajuda
-
-//falta fazer a pagina
-
-//6 flag --help
-
-//flag a funcionar mas nao indica ajuda
-
+// 6 flag --help
+    // flag a funcionar mas nao indica ajuda

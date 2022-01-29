@@ -6,6 +6,7 @@
 #include <time.h>
 
 #define N 5
+#define M 20
 #define PI 3.141592654
 
 int checkInputValues(char numbers[2])
@@ -213,11 +214,48 @@ void metade1metade2(int arrayOfValues[N])
     }
 }
 
-int randomArray(){
-    int randArray[][20];
-    for (int i = 0; i < 20; i++)
+void minimoMultiploComum(int arrayofValues[N])
+{
+    int a = 0, b = 0;
+    int temp, a1, b1;
+
+    for (int i = 0; i < N; i++)
     {
-        //randArray[0][i] =  
+        a = arrayofValues[i];
+        b = arrayofValues[i + 1];
+        a1 = a, b1 = b;
+        while (b1 != 0)
+        {
+            temp = b1;
+            b1 = a1 % b1;
+            a1 = temp;
+        }
+        if (i == N - 1)
+        {
+            //printf("(%d)", a);
+        }
+        else
+        {
+            printf("entre o numero %d e o numero %d = o minimo multiplo comum é %d\n", a, b, (a * b) / a1);
+        }
+    }
+}
+
+void randomArray(int arrayofValues[N], int array2020[N][N]){
+    int randArray[0][M];
+    for (int i = 0; i < M; i++)
+    {
+        //vai atribuir valores entre 8 - 29
+        randArray[0][i] = ((rand() % 22) + 8);
+        //printf("%d ", randomArray[0][i]);
+    }
+    for (int i = 0; i < N; i++)
+    {
+        for (int j = 0; j < N; j++)
+        {
+
+        }
+        
     }
     
 }
