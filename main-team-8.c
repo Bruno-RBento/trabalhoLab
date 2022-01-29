@@ -10,6 +10,7 @@
 #include "functions-team-8.h"
 
 #define N 5
+#define M 5
 #define PI 3.141592654
 
 int menu_principal()
@@ -129,10 +130,13 @@ void premute(char arrayofValues[4]){
     //premutacao nao esta a funcionar
     //metade1metade2 resolver nao alterear o array original
     int arrayOfValues[N];
-
+    int arrayMulti[M][M];
     escreverVetor(arrayOfValues);
     mostrarVetor(arrayOfValues);
-    minimoMultiploComum(arrayOfValues);
+    //minimoMultiploComum(arrayOfValues);
+    MultiplyArray(arrayOfValues, arrayMulti);
+
+    //randomArray(arrayOfValues, arrayMulti);
     //coseno2half(arrayOfValues);
     //ordernarCrescente(arrayOfValues);
     //mostrarVetor(arrayOfValues);

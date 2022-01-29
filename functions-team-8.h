@@ -1,4 +1,5 @@
 #define N 5
+#define M 5
 #define PI 3.141592654
 
 //input
@@ -25,11 +26,11 @@ void metade1metade2(int arrayOfValues[N]);
 //2 minimo multiplo Comum
 void minimoMultiploComum(int arrayofValues[N]);
 // 3 matriz aleatoria de 1/20 fica 20/20
-
+void MultiplyArray(int arrayofValues[N], int array2020[M][M]);
 // 4 matriz trasposta da acima
 
 // 5 pagina de ajuda
-    // falta fazer a pagina
+// falta fazer a pagina
 
 // 6 flag --help
-    // flag a funcionar mas nao indica ajuda
+// flag a funcionar mas nao indica ajuda
