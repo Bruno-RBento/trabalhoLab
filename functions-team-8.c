@@ -106,7 +106,7 @@ void ordernarCrescente(int arrayOfValues[N])
     }
     mostrarVetor(arrayOfValues);
 }
-//for (int i = 0, j = 0; i <= N - 1 && j <= N - 1; i++, j++)
+
     void SomaArray(int arrayOfValues[N])
     {
 
@@ -255,7 +255,34 @@ void MultiplyArray(int arrayofValues[N], int arrayMulti[M][M]){
         for (int j = 0; j < M; j++)
         {
             arrayMulti[i][j] = arrayofValues[i] * rArray[0][j];
-            //printf("v1->%d v2->%d res->%d\n", arrayofValues[i], rArray[0][j], arrayMulti[i][j]);
         }
+    }
+    for (int i = 0; i < M; i++)
+    {
+        for (int j = 0; j < M; j++)
+        {
+            printf("%d ", arrayMulti[i][j]);
+        }
+        printf(" \n");
+    }
+}
+
+void TranspostadaMatriz(int arrayMulti[M][M]){
+    int arrayT[M][M];
+    for (int i = 0; i < M; i++)
+    {
+        for (int j = 0; j < M; j++)
+        {
+            arrayT[j][i] = arrayMulti[i][j];
+        }
+    }
+    printf("array T\n");
+    for (int i = 0; i < M; i++)
+    {
+        for (int j = 0; j < M; j++)
+        {
+            printf("%d ", arrayT[i][j]);
+        }
+        printf(" \n");
     }
 }

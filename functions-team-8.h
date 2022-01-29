@@ -28,7 +28,7 @@ void minimoMultiploComum(int arrayofValues[N]);
 // 3 matriz aleatoria de 1/20 fica 20/20
 void MultiplyArray(int arrayofValues[N], int array2020[M][M]);
 // 4 matriz trasposta da acima
-
+void TranspostadaMatriz(int arrayMulti[M][M]);
 // 5 pagina de ajuda
 // falta fazer a pagina
 

@@ -135,6 +135,7 @@ void premute(char arrayofValues[4]){
     mostrarVetor(arrayOfValues);
     //minimoMultiploComum(arrayOfValues);
     MultiplyArray(arrayOfValues, arrayMulti);
+    TranspostadaMatriz(arrayMulti);
 
     //randomArray(arrayOfValues, arrayMulti);
     //coseno2half(arrayOfValues);
