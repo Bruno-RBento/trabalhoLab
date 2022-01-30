@@ -70,7 +70,8 @@ int checkInputValues(char numbers[2])
  * caso o dígito não esteja correcto voltará ao início, caso esteja correcto o valor será colocado em arrayOfValues.
  * 
  * @param arrayOfValues Este é o array onde todos os dígitos correctos são introduzidos.
- * 
+ * @arg Input: É o array auxiliar.
+ * @arg valueFromCheck: Variável a ser utilizada para verificar os dígitos.
  */
 void escreverVetor(int arrayOfValues[N])
 {
