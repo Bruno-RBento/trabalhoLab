@@ -104,6 +104,11 @@ void escreverVetor(int arrayOfValues[N])
         }
     }
 }
+/**
+ * @brief Esta função atravessa o array e imprime-a. 
+ * 
+ * @param arrayOfValues Este é o conjunto a partir do qual serão retirados os valores para impressão
+ */
 
 void mostrarVetor(int arrayOfValues[N])
 {
@@ -114,6 +119,11 @@ void mostrarVetor(int arrayOfValues[N])
     printf("\n");
 }
 
+/**
+ * @brief Esta função ordena, por ordem crescente, todos os valores da array. \n
+ * Para o conseguir, verifica cada elemento da matriz para ver qual é maior e se é troca-os.
+ * @param arrayOfValues É a matriz a ser comparada para a ordenação 
+ */
 // Bubble sort
 void ordernarCrescente(int arrayOfValues[N])
 {
@@ -132,7 +142,12 @@ void ordernarCrescente(int arrayOfValues[N])
     printf("o vetor odenado\n");
     mostrarVetor(arrayOfValues);
 }
-
+/**
+ * @brief Esta função adiciona a primeira metade da função arrayOfValues com a outra metade, 
+ * se o tamanho do array for uniforme, então a soma será normal, se for estranho, ignorará o elemento médio.
+ * 
+ * @param arrayOfValues Esta é a matriz que será somada.
+ */
     void SomaArray(int arrayOfValues[N])
     {
 
@@ -154,6 +169,18 @@ void ordernarCrescente(int arrayOfValues[N])
         }
         printf("\n");
 }
+/**
+ * @brief Esta função permuta os elementos do array passados como parâmetro, 
+ * cria o array onde os novos valores serão introduzidos, 
+ * e as variáveis j e temporárias para armazenar os valores. \n
+ * A permutação ocorre no primeiro laço onde "j" recebe um valor aleatório, d
+ * epois a variável temporária recebe o valor da posição "j" da matriz, 
+ * depois esta mesma posição recebe o valor da posição "i", 
+ * finalmente a posição "i" recebe o valor da posição "j". \n
+ * No final basta colocar a nova matriz na matriz 20 x 20 e imprimi-la.
+ * 
+ * @param arrayOfValues É a matriz principal da qual será extraída para a matriz premutada.
+ */
 // Fisher–Yates shuffle
 void premutacaoElementos(int arrayOfValues[N])
 {
@@ -185,12 +212,23 @@ void premutacaoElementos(int arrayOfValues[N])
         printf("\n");
     }
     }
+/**
+ * @brief Esta função obtém um número aleatório para escolher uma posição aleatória da matriz e depois imprimi-la. 
+ * 
+ * @param arrayOfValues É a matriz da qual será obtido um valor aleatório.
+ */
 void randomNumber(int arrayOfValues[N])
 {
     int result = arrayOfValues[(rand() % N)];
     printf(" o Numero aleatorio do vetor é %d\n", result);
 }
-
+/**
+ * @brief Esta função toma o co-seno de metade do conjunto passado como parametro. \n
+ * Cria uma nova matriz com apenas metade dos valores originais, 
+ * depois converte-os em graus para finalmente obter o coseno de cada um dos valores originais. 
+ * 
+ * @param arrayOfValues É a matriz da qual será retirado o cosseno da metade de cada um dos elementos.
+ */
 void coseno2half(int arrayOfValues[N])
 {
 
@@ -253,9 +291,15 @@ void metade1metade2(int arrayOfValues[N])
 /**
  * Function: minimoMultiploComum
  *
- * @brief Calcula o mínimo múltiplo comum de valores de 2 valores próximos no vetor, mostrando no ecrã os respetivos valores e o resultante mínimo múltiplo comum
- *  @param  arrayofValues vetor de valores pedidos ao utilizador
- * */
+ * @brief Calcula o mínimo múltiplo comum de valores de 2 valores próximos no vetor, 
+ * mostrando no ecrã os respetivos valores e o resultante mínimo múltiplo comum. \n
+ * Criar as variáveis a, b e temp, a1, b1. estas serão usadas para armazenar os valores,
+ *  com estas será obtido primeiro o divisor máximo comum que será armazenado em a1, 
+ * depois este valor será usado para o mínimo comum multiplicando os valores de a e b e depois dividindo para a1.
+ * 
+ * @param arrayofValues vetor de valores pedidos ao utilizador
+ * 
+ */
 void minimoMultiploComum(int arrayofValues[N])
 {
     int a = 0, b = 0;
