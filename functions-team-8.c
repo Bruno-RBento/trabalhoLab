@@ -251,8 +251,8 @@ void metade1metade2(int arrayOfValues[N])
 /**
  * Function: minimoMultiploComum
  *
- * Calcula o minimo multiplo comum de valores de 2 valores proximos no vetor
- * Mostrando no ecra os respectivos valores e o resultante minimo multiplo comum
+ * @brief Calcula o mínimo múltiplo comum de valores de 2 valores próximos no vetor, mostrando no ecrã os respetivos valores e o resultante mínimo múltiplo comum
+ *  @param  arrayofValues vetor de valores pedidos ao utilizador
  * */
 void minimoMultiploComum(int arrayofValues[N])
 {
@@ -283,9 +283,10 @@ void minimoMultiploComum(int arrayofValues[N])
 /**
  * Function: MultiplyArray
  *
- * Multiplica o vetor inicial "arrayofValues[N]" por uma matriz multidimencional "rArray[1][M]" de valores aleatorios
- * criado uma matriz 20 por 20
- * Mostra no ecra
+ * @brief Multiplica o vetor inicial "arrayofValues[N]" por uma matriz multidimensional "rArray[1][M]" de valores aleatórios  gerados, criado uma matriz 20 por 20 que depois é mostrada no ecra.
+ * @param  arrayofValues vetor de valores pedidos ao utilizador
+ * @param arrayMulti é um array multidimensional onde se vai colocar o resultado da multiplicação
+ *
  * */
 void MultiplyArray(int arrayofValues[N], int arrayMulti[M][M]){
     
@@ -314,8 +315,9 @@ void MultiplyArray(int arrayofValues[N], int arrayMulti[M][M]){
 /**
  * Function: TranspostadaMatriz
  *
- * Transpoem a matriz multidimensional recebida como input "arrayMulti[M][M]"
- * mostrando no ecra
+ * @brief Transpoem a matriz multidimensional, mostrando no ecra
+ *  @param arrayMulti: é um array multidimensional com o resultado da multiplicação na funcão MultiplyArray
+ *  @arg arrayT: o array onde se vai colocar a matriz transposta
  * */
 void TranspostadaMatriz(int arrayMulti[M][M]){
     int arrayT[M][M];
@@ -339,7 +341,7 @@ void TranspostadaMatriz(int arrayMulti[M][M]){
 /**
  * Function: menu_principal
  *
- * Mostra o menu principal, com as opções das funcionalidades.
+ * @brief Mostra o menu principal, com as opções das funcionalidades.
  * */
 void menu_principal()
 {
@@ -364,7 +366,7 @@ void menu_principal()
     /**
      * Function: help_flag
      *
-     * Mostra uma pagina de ajuda, quando se adiciona --help no terminal
+     *@brief Mostra uma pagina de ajuda, quando se adiciona --help no terminal
      * */
     void help_flag()
     {
@@ -379,7 +381,7 @@ void menu_principal()
 /**
  * Function: menu_ajuda()
  *
- * Mostra uma pagina de ajuda, com as opções para selecionar
+ *@brief Mostra uma pagina de ajuda
  *
  * */
 void menu_ajuda()
