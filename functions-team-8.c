@@ -248,6 +248,12 @@ void metade1metade2(int arrayOfValues[N])
     }
 }
 
+/**
+ * Function: minimoMultiploComum
+ *
+ * Calcula o minimo multiplo comum de valores de 2 valores proximos no vetor
+ * Mostrando no ecra os respectivos valores e o resultante minimo multiplo comum
+ * */
 void minimoMultiploComum(int arrayofValues[N])
 {
     int a = 0, b = 0;
@@ -274,7 +280,13 @@ void minimoMultiploComum(int arrayofValues[N])
         }
     }
 }
-
+/**
+ * Function: MultiplyArray
+ *
+ * Multiplica o vetor inicial "arrayofValues[N]" por uma matriz multidimencional "rArray[1][M]" de valores aleatorios
+ * criado uma matriz 20 por 20
+ * Mostra no ecra
+ * */
 void MultiplyArray(int arrayofValues[N], int arrayMulti[M][M]){
     
     int rArray[1][M];
@@ -299,7 +311,12 @@ void MultiplyArray(int arrayofValues[N], int arrayMulti[M][M]){
         printf(" \n");
     }
 }
-
+/**
+ * Function: TranspostadaMatriz
+ *
+ * Transpoem a matriz multidimensional recebida como input "arrayMulti[M][M]"
+ * mostrando no ecra
+ * */
 void TranspostadaMatriz(int arrayMulti[M][M]){
     int arrayT[M][M];
     for (int i = 0; i < M; i++)
@@ -319,7 +336,11 @@ void TranspostadaMatriz(int arrayMulti[M][M]){
         printf(" \n");
     }
 }
-
+/**
+ * Function: menu_principal
+ *
+ * Mostra o menu principal, com as opções das funcionalidades.
+ * */
 void menu_principal()
 {
     printf("╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗\n");
@@ -340,23 +361,32 @@ void menu_principal()
     printf("║- [12] Sair                                                                                                           ║\n");
     printf("╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝\n");
     }
-
-void help_flag()
-{
-    printf("╔═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗\n");
-    printf("╠════════════════════════════════════════════════════════════════  AJUDA  ════════════════════════════════════════════════════════════╣\n");
-    printf("║- [1]O objetivo deste trabalho  é  implementar  um programa  para  calcular algumas estatísticas                                     ║\n");
-    printf("║- [2] As operações são realizadas entre 20 números compreendidos entre 8 e 29. Após se verificar a operação retorna o menu principal ║\n");
-    printf("╠═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╣\n");
-    printf("║ Existe um menu de ajuda extra na opção 7 do menu principal                                                                          ║\n");
-    printf("╚═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝\n");
+    /**
+     * Function: help_flag
+     *
+     * Mostra uma pagina de ajuda, quando se adiciona --help no terminal
+     * */
+    void help_flag()
+    {
+        printf("╔═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗\n");
+        printf("╠════════════════════════════════════════════════════════════════  AJUDA  ════════════════════════════════════════════════════════════╣\n");
+        printf("║- [1]O objetivo deste trabalho  é  implementar  um programa  para  calcular algumas estatísticas                                     ║\n");
+        printf("║- [2] As operações são realizadas entre 20 números compreendidos entre 8 e 29. Após se verificar a operação retorna o menu principal ║\n");
+        printf("╠═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╣\n");
+        printf("║ Existe um menu de ajuda extra na opção 7 do menu principal                                                                          ║\n");
+        printf("╚═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝\n");
 }
-
+/**
+ * Function: menu_ajuda()
+ *
+ * Mostra uma pagina de ajuda, com as opções para selecionar
+ *
+ * */
 void menu_ajuda()
 {
     printf("╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗\n");
     printf("╠═════════════════════════════════════════════════════  AJUDA  ═══════════════════════════════════════════════════════╣\n");
-    printf("║- [1]Devolução do vetor ordenado por ordem crescente                                                               ║\n");
+    printf("║- [1] Devolução do vetor ordenado por ordem crescente                                                               ║\n");
     printf("║- [2] Cálculo da soma da primeira metade dos elementos no vetor com os da segunda metade                           ║\n");
     printf("║- [3] Construção de uma matriz 20x20, em que as linhas sãocomposta pelo vetor lido por permutações dos seus valores║\n");
     printf("║- [4] Cálculo do coseno (cos) da segunda metade dos elementos no vetor                                             ║\n");
