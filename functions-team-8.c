@@ -242,7 +242,11 @@ void coseno2half(int arrayOfValues[N])
         printf("O numero é %d e o cos é %f\n", arrayOfValues[half + i], arrayCos[i]);
     }
 }
-
+/**
+ * @brief Percorre a array e verificar que números são múltiplos de 3.
+ * 
+ * @param arrayOfValues  É a array a ser atravessada
+ */
 void iDivisivel3(int arrayOfValues[N])
 {
     for (int i = 0; i < N; i++)
@@ -253,6 +257,16 @@ void iDivisivel3(int arrayOfValues[N])
         }
     }
 }
+/**
+ * @brief Esta função lê o array passado como parâmetro, 
+ * depois verifica estes valores com a função "checkInputValues", 
+ * no caso do valor não ser válido volta a pedir um novo número, 
+ * se o valor estiver correcto então coloca estes dígitos na primeira metade do array,
+ *  e se o valor não for válido volta a pedir um novo número, 
+ * se o valor estiver correcto então coloca estes dígitos na primeira metade do array. 
+ * 
+ * @param arrayOfValues Esta é a matriz base na qual os novos valores serão introduzidos
+ */
 
 void metade1metade2(int arrayOfValues[N])
 {
