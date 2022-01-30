@@ -77,10 +77,10 @@ void escreverVetor(int arrayOfValues[N])
 {
     for (int i = 0; i < N; i++)
     {
-
+        printf("Coloque um valor entre 8 e 29\n");
         printf("╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗\n");
-        printf("║                                                       Vai ficar na posiçao numero %d                                 ║\n",i);
-        printf("╠══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╣\n");
+        printf("║                                                       Vai ficar na posiçao numero %d                                  ║\n",i);
+        printf("╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝\n");
         char input[2];
         printf("introduza um numero\n");
         scanf("%2s", input);
@@ -221,6 +221,7 @@ void metade1metade2(int arrayOfValues[N])
     for (int i = 0; i < N; i++)
     {
         char input[2];
+        printf("Novo vetor, coloque um valor entre 8 e 29\n");
         printf("introduza um numero\n");
         scanf("%2s", input);
 
@@ -246,6 +247,7 @@ void metade1metade2(int arrayOfValues[N])
             continue;
         }
     }
+    mostrarVetor(arrayOfValues);
 }
 
 /**
