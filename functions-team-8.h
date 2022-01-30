@@ -33,4 +33,8 @@ void TranspostadaMatriz(int arrayMulti[M][M]);
 // falta fazer a pagina
 
 // 6 flag --help
-// flag a funcionar mas nao indica ajuda
+
+//menus
+void menu_principal();
+void help_flag();
+void menu_ajuda();
