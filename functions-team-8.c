@@ -17,6 +17,21 @@
 #define M 5
 #define PI 3.141592654
 
+/**
+ * @brief Verifica os números ou dígitos que são introduzidos na array "números".
+ * Se o dígito introduzido for 8 ou 9 então retornará o mesmo valor, se for um número diferente a função continuará 
+ * e se não for um número então retornará -1.
+ * Em caso de continuação, a função irá transformar a função num inteiro e imprimi-lo no ecrã.
+ * Se o número obtido for inferior a 8 ou superior a 29, então -2 será devolvido, caso contrário o resultado será devolvido.
+ * @param numbers É o array a ser verificada.
+ * @param result Número transformado a ser avaliado
+ * @return Dependendo do caso, o return sera: \n
+ *   8 = Se o número de matriz for 8 \n
+ *   9 = Se o número de matriz for 9 \n
+ *  -1 = Se o valor não for um dígito \n
+ *  -2 = Se o "result" for inferior a 8 e superior a 29
+ */
+
 int checkInputValues(char numbers[2])
 {
     int result;
@@ -47,7 +62,16 @@ int checkInputValues(char numbers[2])
     }
     return result;
 }
-
+/**
+ * @brief Esta função permite escrever para o array "arrayOfValues" 
+ * @details Permite a introdução de um dígito numa array auxiliar chamada "input", 
+ * esta array será confirmada chamando à função "checkInputValues". \n
+ * É criado um novo parâmetro chamado "valueFromCheck" que terá os retornos da função anterior, 
+ * caso o dígito não esteja correcto voltará ao início, caso esteja correcto o valor será colocado em arrayOfValues.
+ * 
+ * @param arrayOfValues Este é o array onde todos os dígitos correctos são introduzidos.
+ * 
+ */
 void escreverVetor(int arrayOfValues[N])
 {
     for (int i = 0; i < N; i++)
