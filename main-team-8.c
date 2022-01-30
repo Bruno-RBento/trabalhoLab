@@ -1,3 +1,11 @@
+/**
+ * @autores:
+ * Nome:Andre Ramos                 Número de Aluno:47816
+ * Nome:Bruno Bento                 Número de Aluno:47583
+ * Nome:Joel Tapia                  Número de Aluno:47275
+ * Nome:Veronica                    Número de Aluno:Z638
+ **/
+
 #include<stdio.h>
 #include <string.h>
 #include<ctype.h>
