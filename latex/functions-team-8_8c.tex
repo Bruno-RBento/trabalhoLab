@@ -1,0 +1,182 @@
+\hypertarget{functions-team-8_8c}{}\doxysection{Referência ao ficheiro functions-\/team-\/8.c}
+\label{functions-team-8_8c}\index{functions-\/team-\/8.c@{functions-\/team-\/8.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{functions-team-8_8c_a0240ac851181b84ac374872dc5434ee4}{N}}~5
+\item 
+\#define \mbox{\hyperlink{functions-team-8_8c_a52037c938e3c1b126c6277da5ca689d0}{M}}~5
+\item 
+\#define \mbox{\hyperlink{functions-team-8_8c_a598a3330b3c21701223ee0ca14316eca}{PI}}~3.\+141592654
+\end{DoxyCompactItemize}
+\doxysubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{functions-team-8_8c_a96d630a0e7cd29bcc55159b02acd44ec}{check\+Input\+Values}} (char numbers\mbox{[}2\mbox{]})
+\begin{DoxyCompactList}\small\item\em Verifica os números ou dígitos que são introduzidos na array \char`\"{}números\char`\"{}. Se o dígito introduzido for 8 ou 9 então retornará o mesmo valor, se for um número diferente a função continuará e se não for um número então retornará -\/1. Em caso de continuação, a função irá transformar a função num inteiro e imprimi-\/lo no ecrã. Se o número obtido for inferior a 8 ou superior a 29, então -\/2 será devolvido, caso contrário o resultado será devolvido. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions-team-8_8c_a8634aefba93f9bc6e537e0e91bca5977}{escrever\+Vetor}} (int array\+Of\+Values\mbox{[}\mbox{\hyperlink{functions-team-8_8h_a0240ac851181b84ac374872dc5434ee4}{N}}\mbox{]})
+\begin{DoxyCompactList}\small\item\em Esta função permite escrever para o array \char`\"{}array\+Of\+Values\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions-team-8_8c_a578fd7e0c097ed54cbc2bd544921b8ba}{mostrar\+Vetor}} (int array\+Of\+Values\mbox{[}\mbox{\hyperlink{functions-team-8_8h_a0240ac851181b84ac374872dc5434ee4}{N}}\mbox{]})
+\item 
+void \mbox{\hyperlink{functions-team-8_8c_a3b1f6a65b1d4aab038423eabd46dde43}{ordernar\+Crescente}} (int array\+Of\+Values\mbox{[}\mbox{\hyperlink{functions-team-8_8h_a0240ac851181b84ac374872dc5434ee4}{N}}\mbox{]})
+\item 
+void \mbox{\hyperlink{functions-team-8_8c_a1cc32e244792e83263c02fa9ecde20ff}{Soma\+Array}} (int array\+Of\+Values\mbox{[}\mbox{\hyperlink{functions-team-8_8h_a0240ac851181b84ac374872dc5434ee4}{N}}\mbox{]})
+\item 
+void \mbox{\hyperlink{functions-team-8_8c_a6ea1c4767855c24adc5c9298abdf6c5b}{premutacao\+Elementos}} (int array\+Of\+Values\mbox{[}\mbox{\hyperlink{functions-team-8_8h_a0240ac851181b84ac374872dc5434ee4}{N}}\mbox{]})
+\item 
+void \mbox{\hyperlink{functions-team-8_8c_a6e5492c8c61a9b0e45f57ded6ec242bd}{random\+Number}} (int array\+Of\+Values\mbox{[}\mbox{\hyperlink{functions-team-8_8h_a0240ac851181b84ac374872dc5434ee4}{N}}\mbox{]})
+\item 
+void \mbox{\hyperlink{functions-team-8_8c_a5b4422fa5cbe14b6cc57e53257a4bf92}{coseno2half}} (int array\+Of\+Values\mbox{[}\mbox{\hyperlink{functions-team-8_8h_a0240ac851181b84ac374872dc5434ee4}{N}}\mbox{]})
+\item 
+void \mbox{\hyperlink{functions-team-8_8c_ad37250aaacd24bb092f701935b8d3331}{i\+Divisivel3}} (int array\+Of\+Values\mbox{[}\mbox{\hyperlink{functions-team-8_8h_a0240ac851181b84ac374872dc5434ee4}{N}}\mbox{]})
+\item 
+void \mbox{\hyperlink{functions-team-8_8c_aedc73ebefd74eb2c6c3adefa810f704f}{metade1metade2}} (int array\+Of\+Values\mbox{[}\mbox{\hyperlink{functions-team-8_8h_a0240ac851181b84ac374872dc5434ee4}{N}}\mbox{]})
+\item 
+void \mbox{\hyperlink{functions-team-8_8c_a0f1426145e33c57633a24a748b48ec45}{minimo\+Multiplo\+Comum}} (int arrayof\+Values\mbox{[}\mbox{\hyperlink{functions-team-8_8h_a0240ac851181b84ac374872dc5434ee4}{N}}\mbox{]})
+\item 
+void \mbox{\hyperlink{functions-team-8_8c_afc41cde61d18a2dfb3400d8b286f2948}{Multiply\+Array}} (int arrayof\+Values\mbox{[}\mbox{\hyperlink{functions-team-8_8h_a0240ac851181b84ac374872dc5434ee4}{N}}\mbox{]}, int array\+Multi\mbox{[}\mbox{\hyperlink{functions-team-8_8h_a52037c938e3c1b126c6277da5ca689d0}{M}}\mbox{]}\mbox{[}\mbox{\hyperlink{functions-team-8_8h_a52037c938e3c1b126c6277da5ca689d0}{M}}\mbox{]})
+\item 
+void \mbox{\hyperlink{functions-team-8_8c_adbc5e93b162f1973d096a603a8edc055}{Transpostada\+Matriz}} (int array\+Multi\mbox{[}\mbox{\hyperlink{functions-team-8_8h_a52037c938e3c1b126c6277da5ca689d0}{M}}\mbox{]}\mbox{[}\mbox{\hyperlink{functions-team-8_8h_a52037c938e3c1b126c6277da5ca689d0}{M}}\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentação das macros}
+\mbox{\Hypertarget{functions-team-8_8c_a52037c938e3c1b126c6277da5ca689d0}\label{functions-team-8_8c_a52037c938e3c1b126c6277da5ca689d0}} 
+\index{functions-\/team-\/8.c@{functions-\/team-\/8.c}!M@{M}}
+\index{M@{M}!functions-\/team-\/8.c@{functions-\/team-\/8.c}}
+\doxysubsubsection{\texorpdfstring{M}{M}}
+{\footnotesize\ttfamily \#define M~5}
+
+\mbox{\Hypertarget{functions-team-8_8c_a0240ac851181b84ac374872dc5434ee4}\label{functions-team-8_8c_a0240ac851181b84ac374872dc5434ee4}} 
+\index{functions-\/team-\/8.c@{functions-\/team-\/8.c}!N@{N}}
+\index{N@{N}!functions-\/team-\/8.c@{functions-\/team-\/8.c}}
+\doxysubsubsection{\texorpdfstring{N}{N}}
+{\footnotesize\ttfamily \#define N~5}
+
+@autores\+: Nome\+:Bruno Bento Número de Aluno\+:47583 Nome\+: Número de Aluno\+: Nome\+: Número de Aluno\+: Nome\+: Número de Aluno\+: \mbox{\Hypertarget{functions-team-8_8c_a598a3330b3c21701223ee0ca14316eca}\label{functions-team-8_8c_a598a3330b3c21701223ee0ca14316eca}} 
+\index{functions-\/team-\/8.c@{functions-\/team-\/8.c}!PI@{PI}}
+\index{PI@{PI}!functions-\/team-\/8.c@{functions-\/team-\/8.c}}
+\doxysubsubsection{\texorpdfstring{PI}{PI}}
+{\footnotesize\ttfamily \#define PI~3.\+141592654}
+
+
+
+\doxysubsection{Documentação das funções}
+\mbox{\Hypertarget{functions-team-8_8c_a96d630a0e7cd29bcc55159b02acd44ec}\label{functions-team-8_8c_a96d630a0e7cd29bcc55159b02acd44ec}} 
+\index{functions-\/team-\/8.c@{functions-\/team-\/8.c}!checkInputValues@{checkInputValues}}
+\index{checkInputValues@{checkInputValues}!functions-\/team-\/8.c@{functions-\/team-\/8.c}}
+\doxysubsubsection{\texorpdfstring{checkInputValues()}{checkInputValues()}}
+{\footnotesize\ttfamily int check\+Input\+Values (\begin{DoxyParamCaption}\item[{char}]{numbers\mbox{[}2\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Verifica os números ou dígitos que são introduzidos na array \char`\"{}números\char`\"{}. Se o dígito introduzido for 8 ou 9 então retornará o mesmo valor, se for um número diferente a função continuará e se não for um número então retornará -\/1. Em caso de continuação, a função irá transformar a função num inteiro e imprimi-\/lo no ecrã. Se o número obtido for inferior a 8 ou superior a 29, então -\/2 será devolvido, caso contrário o resultado será devolvido. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em numbers} & É o array a ser verificada. \\
+\hline
+{\em result} & Número transformado a ser avaliado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Dependendo do caso, o return sera\+: ~\newline
+ 8 = Se o número de matriz for 8 ~\newline
+ 9 = Se o número de matriz for 9 ~\newline
+ -\/1 = Se o valor não for um dígito ~\newline
+ -\/2 = Se o \char`\"{}result\char`\"{} for inferior a 8 e superior a 29 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions-team-8_8c_a5b4422fa5cbe14b6cc57e53257a4bf92}\label{functions-team-8_8c_a5b4422fa5cbe14b6cc57e53257a4bf92}} 
+\index{functions-\/team-\/8.c@{functions-\/team-\/8.c}!coseno2half@{coseno2half}}
+\index{coseno2half@{coseno2half}!functions-\/team-\/8.c@{functions-\/team-\/8.c}}
+\doxysubsubsection{\texorpdfstring{coseno2half()}{coseno2half()}}
+{\footnotesize\ttfamily void coseno2half (\begin{DoxyParamCaption}\item[{int}]{array\+Of\+Values\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{functions-team-8_8c_a8634aefba93f9bc6e537e0e91bca5977}\label{functions-team-8_8c_a8634aefba93f9bc6e537e0e91bca5977}} 
+\index{functions-\/team-\/8.c@{functions-\/team-\/8.c}!escreverVetor@{escreverVetor}}
+\index{escreverVetor@{escreverVetor}!functions-\/team-\/8.c@{functions-\/team-\/8.c}}
+\doxysubsubsection{\texorpdfstring{escreverVetor()}{escreverVetor()}}
+{\footnotesize\ttfamily void escrever\+Vetor (\begin{DoxyParamCaption}\item[{int}]{array\+Of\+Values\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Esta função permite escrever para o array \char`\"{}array\+Of\+Values\char`\"{}. 
+
+Permite a introdução de um dígito numa array auxiliar chamada \char`\"{}input\char`\"{}, esta array será confirmada chamando à função \char`\"{}check\+Input\+Values\char`\"{}. ~\newline
+É criado um novo parâmetro chamado \char`\"{}value\+From\+Check\char`\"{} que terá os retornos da função anterior, caso o dígito não esteja correcto voltará ao início, caso esteja correcto o valor será colocado em array\+Of\+Values.
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em array\+Of\+Values} & Este é o array onde todos os dígitos correctos são introduzidos. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyItemize}
+\item Input\+: É o array auxiliar.\end{DoxyItemize}
+\begin{DoxyItemize}
+\item value\+From\+Check\+: Variável a ser utilizada para verificar os dígitos.\end{DoxyItemize}
+\mbox{\Hypertarget{functions-team-8_8c_ad37250aaacd24bb092f701935b8d3331}\label{functions-team-8_8c_ad37250aaacd24bb092f701935b8d3331}} 
+\index{functions-\/team-\/8.c@{functions-\/team-\/8.c}!iDivisivel3@{iDivisivel3}}
+\index{iDivisivel3@{iDivisivel3}!functions-\/team-\/8.c@{functions-\/team-\/8.c}}
+\doxysubsubsection{\texorpdfstring{iDivisivel3()}{iDivisivel3()}}
+{\footnotesize\ttfamily void i\+Divisivel3 (\begin{DoxyParamCaption}\item[{int}]{array\+Of\+Values\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{functions-team-8_8c_aedc73ebefd74eb2c6c3adefa810f704f}\label{functions-team-8_8c_aedc73ebefd74eb2c6c3adefa810f704f}} 
+\index{functions-\/team-\/8.c@{functions-\/team-\/8.c}!metade1metade2@{metade1metade2}}
+\index{metade1metade2@{metade1metade2}!functions-\/team-\/8.c@{functions-\/team-\/8.c}}
+\doxysubsubsection{\texorpdfstring{metade1metade2()}{metade1metade2()}}
+{\footnotesize\ttfamily void metade1metade2 (\begin{DoxyParamCaption}\item[{int}]{array\+Of\+Values\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{functions-team-8_8c_a0f1426145e33c57633a24a748b48ec45}\label{functions-team-8_8c_a0f1426145e33c57633a24a748b48ec45}} 
+\index{functions-\/team-\/8.c@{functions-\/team-\/8.c}!minimoMultiploComum@{minimoMultiploComum}}
+\index{minimoMultiploComum@{minimoMultiploComum}!functions-\/team-\/8.c@{functions-\/team-\/8.c}}
+\doxysubsubsection{\texorpdfstring{minimoMultiploComum()}{minimoMultiploComum()}}
+{\footnotesize\ttfamily void minimo\+Multiplo\+Comum (\begin{DoxyParamCaption}\item[{int}]{arrayof\+Values\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{functions-team-8_8c_a578fd7e0c097ed54cbc2bd544921b8ba}\label{functions-team-8_8c_a578fd7e0c097ed54cbc2bd544921b8ba}} 
+\index{functions-\/team-\/8.c@{functions-\/team-\/8.c}!mostrarVetor@{mostrarVetor}}
+\index{mostrarVetor@{mostrarVetor}!functions-\/team-\/8.c@{functions-\/team-\/8.c}}
+\doxysubsubsection{\texorpdfstring{mostrarVetor()}{mostrarVetor()}}
+{\footnotesize\ttfamily void mostrar\+Vetor (\begin{DoxyParamCaption}\item[{int}]{array\+Of\+Values\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{functions-team-8_8c_afc41cde61d18a2dfb3400d8b286f2948}\label{functions-team-8_8c_afc41cde61d18a2dfb3400d8b286f2948}} 
+\index{functions-\/team-\/8.c@{functions-\/team-\/8.c}!MultiplyArray@{MultiplyArray}}
+\index{MultiplyArray@{MultiplyArray}!functions-\/team-\/8.c@{functions-\/team-\/8.c}}
+\doxysubsubsection{\texorpdfstring{MultiplyArray()}{MultiplyArray()}}
+{\footnotesize\ttfamily void Multiply\+Array (\begin{DoxyParamCaption}\item[{int}]{arrayof\+Values\mbox{[}\+N\mbox{]},  }\item[{int}]{array\+Multi\mbox{[}\+M\mbox{]}\mbox{[}\+M\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{functions-team-8_8c_a3b1f6a65b1d4aab038423eabd46dde43}\label{functions-team-8_8c_a3b1f6a65b1d4aab038423eabd46dde43}} 
+\index{functions-\/team-\/8.c@{functions-\/team-\/8.c}!ordernarCrescente@{ordernarCrescente}}
+\index{ordernarCrescente@{ordernarCrescente}!functions-\/team-\/8.c@{functions-\/team-\/8.c}}
+\doxysubsubsection{\texorpdfstring{ordernarCrescente()}{ordernarCrescente()}}
+{\footnotesize\ttfamily void ordernar\+Crescente (\begin{DoxyParamCaption}\item[{int}]{array\+Of\+Values\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{functions-team-8_8c_a6ea1c4767855c24adc5c9298abdf6c5b}\label{functions-team-8_8c_a6ea1c4767855c24adc5c9298abdf6c5b}} 
+\index{functions-\/team-\/8.c@{functions-\/team-\/8.c}!premutacaoElementos@{premutacaoElementos}}
+\index{premutacaoElementos@{premutacaoElementos}!functions-\/team-\/8.c@{functions-\/team-\/8.c}}
+\doxysubsubsection{\texorpdfstring{premutacaoElementos()}{premutacaoElementos()}}
+{\footnotesize\ttfamily void premutacao\+Elementos (\begin{DoxyParamCaption}\item[{int}]{array\+Of\+Values\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{functions-team-8_8c_a6e5492c8c61a9b0e45f57ded6ec242bd}\label{functions-team-8_8c_a6e5492c8c61a9b0e45f57ded6ec242bd}} 
+\index{functions-\/team-\/8.c@{functions-\/team-\/8.c}!randomNumber@{randomNumber}}
+\index{randomNumber@{randomNumber}!functions-\/team-\/8.c@{functions-\/team-\/8.c}}
+\doxysubsubsection{\texorpdfstring{randomNumber()}{randomNumber()}}
+{\footnotesize\ttfamily void random\+Number (\begin{DoxyParamCaption}\item[{int}]{array\+Of\+Values\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{functions-team-8_8c_a1cc32e244792e83263c02fa9ecde20ff}\label{functions-team-8_8c_a1cc32e244792e83263c02fa9ecde20ff}} 
+\index{functions-\/team-\/8.c@{functions-\/team-\/8.c}!SomaArray@{SomaArray}}
+\index{SomaArray@{SomaArray}!functions-\/team-\/8.c@{functions-\/team-\/8.c}}
+\doxysubsubsection{\texorpdfstring{SomaArray()}{SomaArray()}}
+{\footnotesize\ttfamily void Soma\+Array (\begin{DoxyParamCaption}\item[{int}]{array\+Of\+Values\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{functions-team-8_8c_adbc5e93b162f1973d096a603a8edc055}\label{functions-team-8_8c_adbc5e93b162f1973d096a603a8edc055}} 
+\index{functions-\/team-\/8.c@{functions-\/team-\/8.c}!TranspostadaMatriz@{TranspostadaMatriz}}
+\index{TranspostadaMatriz@{TranspostadaMatriz}!functions-\/team-\/8.c@{functions-\/team-\/8.c}}
+\doxysubsubsection{\texorpdfstring{TranspostadaMatriz()}{TranspostadaMatriz()}}
+{\footnotesize\ttfamily void Transpostada\+Matriz (\begin{DoxyParamCaption}\item[{int}]{array\+Multi\mbox{[}\+M\mbox{]}\mbox{[}\+M\mbox{]} }\end{DoxyParamCaption})}
+
