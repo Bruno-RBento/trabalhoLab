@@ -12,7 +12,7 @@ void ordernarCrescente(int arrayOfValues[N]);
 //2
 void SomaArray(int arryOfValues[N]);
 //3
-void premutacaoElementos(int arrayOfValues[N]);
+void permutacaoElementos(int arrayOfValues[N]);
 //4
 void coseno2half(int arrayOfValues[N]);
 //5
@@ -27,7 +27,7 @@ void metade1metade2(int arrayOfValues[N]);
 void minimoMultiploComum(int arrayofValues[N]);
 // 3 matriz aleatoria de 1/20 fica 20/20
 void MultiplyArray(int arrayofValues[N], int array2020[M][M]);
-// 4 matriz trasposta da acima
+// 4 matriz transposta da acima
 void TranspostadaMatriz(int arrayMulti[M][M]);
 // 5 pagina de ajuda
 // falta fazer a pagina
