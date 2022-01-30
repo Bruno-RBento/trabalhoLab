@@ -39,5 +39,15 @@ var menudata={children:[
 {text:"r",url:"globals.html#index_r"},
 {text:"s",url:"globals.html#index_s"},
 {text:"t",url:"globals.html#index_t"}]},
-{text:"Funções",url:"globals_func.html"},
+{text:"Funções",url:"globals_func.html",children:[
+{text:"c",url:"globals_func.html#index_c"},
+{text:"e",url:"globals_func.html#index_e"},
+{text:"h",url:"globals_func.html#index_h"},
+{text:"i",url:"globals_func.html#index_i"},
+{text:"m",url:"globals_func.html#index_m"},
+{text:"o",url:"globals_func.html#index_o"},
+{text:"p",url:"globals_func.html#index_p"},
+{text:"r",url:"globals_func.html#index_r"},
+{text:"s",url:"globals_func.html#index_s"},
+{text:"t",url:"globals_func.html#index_t"}]},
 {text:"Macros",url:"globals_defs.html"}]}]}]}
