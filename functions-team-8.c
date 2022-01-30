@@ -286,6 +286,7 @@ void minimoMultiploComum(int arrayofValues[N])
  * @brief Multiplica o vetor inicial "arrayofValues[N]" por uma matriz multidimensional "rArray[1][M]" de valores aleatórios  gerados, criado uma matriz 20 por 20 que depois é mostrada no ecra.
  * @param  arrayofValues vetor de valores pedidos ao utilizador
  * @param arrayMulti é um array multidimensional onde se vai colocar o resultado da multiplicação
+ * @arg rArray local onde vai ser guardado a matriz de valores aleatorios entre 8 e 29.
  *
  * */
 void MultiplyArray(int arrayofValues[N], int arrayMulti[M][M]){
