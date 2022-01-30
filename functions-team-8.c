@@ -14,10 +14,9 @@ int checkInputValues(char numbers[2])
     int result;
     for (int i = 0; i < 2; i++)
     {
-        // fix this number[1] == ' ';
-        if(numbers[0] == '8'){
+        if(numbers[0] == '8' && numbers[1] == '\0'){
             return 8;
-        }else if(numbers[0]== '9'){
+        }else if(numbers[0]== '9' && numbers[1] == '\0'){
             return 9;
         }
         if (isdigit(numbers[i]))
@@ -129,27 +128,37 @@ void ordernarCrescente(int arrayOfValues[N])
         }
         printf("\n");
 }
-
 void premutacaoElementos(int arrayOfValues[N])
 {
     int matriz[N][N];
-    int number = 0;
+    int j = 0;
+    int temporario = 0;
+    ; // create local variables to hold values for shuffle
 
-    int arrayElements[N];
-    for (int i = 0; i < N; i++)
-    {
-        matriz[i][0] = arrayOfValues[i];
-
-        matriz[i][1] = arrayOfValues[rand() % N];
-    }
-    // only to test if it is working delete after
-    for (int i = 0; i < N; i++)
+    for (int z = 0; z < N; z++)
     {
 
-        printf("the array number %d { %d, %d } \n", i, matriz[i][0], matriz[i][1]);
+        for (int i = N - 1; i > 0; i--)
+        {                           // for loop to shuffle
+            j = (rand() % (i + 1)); // randomise j for shuffle with Fisher Yates
+            temporario = arrayOfValues[j];
+            arrayOfValues[j] = arrayOfValues[i];
+            arrayOfValues[i] = temporario;
+        }
+        for (int i = 0; i < N; i++)
+        {
+            matriz[z][i] = arrayOfValues[i];
+        }
     }
-}
-
+    for (int i = 0; i < N; i++)
+    {
+        for (int j = 0; j < N; j++)
+        {
+            printf("%d ", matriz[i][j]);
+        }
+        printf("\n");
+    }
+    }
 void randomNumber(int arrayOfValues[N])
 {
     int result = arrayOfValues[(rand() % N)];
