@@ -13,8 +13,8 @@
 #include <math.h>
 #include <time.h>
 
-#define N 5
-#define M 5
+#define N 20
+#define M 20
 #define PI 3.141592654
 
 /**
@@ -433,8 +433,8 @@ void menu_principal()
     {
         printf("╔═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗\n");
         printf("╠════════════════════════════════════════════════════════════════  AJUDA  ════════════════════════════════════════════════════════════╣\n");
-        printf("║- [1]O objetivo deste trabalho  é  implementar  um programa  para  calcular algumas estatísticas                                     ║\n");
-        printf("║- [2] As operações são realizadas entre 20 números compreendidos entre 8 e 29. Após se verificar a operação retorna o menu principal ║\n");
+        printf("║- O objetivo deste trabalho  é  implementar  um programa  para  calcular algumas estatísticas                                     ║\n");
+        printf("║- As operações são realizadas entre 20 números compreendidos entre 8 e 29. Após se verificar a operação retorna o menu principal ║\n");
         printf("╠═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╣\n");
         printf("║ Existe um menu de ajuda extra na opção 7 do menu principal                                                                          ║\n");
         printf("╚═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝\n");
@@ -448,19 +448,20 @@ void menu_principal()
 void menu_ajuda()
 {
     printf("╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗\n");
-    printf("╠═════════════════════════════════════════════════════  AJUDA  ═══════════════════════════════════════════════════════╣\n");
-    printf("║- [1] Devolução do vetor ordenado por ordem crescente                                                               ║\n");
+    printf("╠═════════════════════════════════════════════════════  AJUDA  ═════════════════════════════════════════════════════╣\n");
+    printf("║- [1] Devolução do vetor ordenado por ordem crescente                                                              ║\n");
     printf("║- [2] Cálculo da soma da primeira metade dos elementos no vetor com os da segunda metade                           ║\n");
     printf("║- [3] Construção de uma matriz 20x20, em que as linhas sãocomposta pelo vetor lido por permutações dos seus valores║\n");
     printf("║- [4] Cálculo do coseno (cos) da segunda metade dos elementos no vetor                                             ║\n");
     printf("║- [5] Retorno de um elemento aleatório desse vetor                                                                 ║\n");
     printf("║- [6] Devolução dos valores em posições múltiplas de três do vetor                                                 ║\n");
-    printf("║- [7] Funções adicionais                                                                                           ║\n");
+    printf("║- [7] Pagina de ajuda                                                                                              ║\n");
     printf("╠═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════╣\n");
-    printf("╠═══════════════════════════════════════════════  FUNÇÕES ADICIONAIS  ═══════════════════════════════════════════════╣\n");
-    printf("║- [1] Mistura de metade do primeiro vetor e do segundo                                                             ║\n");
-    printf("║- [2] Cálucula o m.m.c de cada dois números seguidos do vetor                                                      ║\n");
-    printf("║- [3] Gera um vetor 1x20 aleatório, e devolve a matriz 20x20 com o novo vetor                                      ║\n");
-    printf("║- [4]Cálculo e apresentação da matriz transposta referida no ponto anterior                                        ║\n");
+    printf("╠═══════════════════════════════════════════════  FUNÇÕES ADICIONAIS  ══════════════════════════════════════════════╣\n");
+    printf("║- [8] Mistura de metade do primeiro vetor e do segundo                                                             ║\n");
+    printf("║- [9] Cálucula o m.m.c de cada dois números seguidos do vetor                                                      ║\n");
+    printf("║- [10] Gera um vetor 1x20 aleatório, e devolve a matriz 20x20 com o novo vetor                                     ║\n");
+    printf("║- [11] Cálculo e apresentação da matriz transposta referida no ponto anterior                                      ║\n");
+    printf("║- [12] Saida do programa                                                                                           ║\n");
     printf("╚═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝\n");
 }
