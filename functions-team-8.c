@@ -1,3 +1,11 @@
+/**
+ * @autores:
+ * Nome:Bruno Bento         Número de Aluno:47583
+ * Nome:                    Número de Aluno:
+ * Nome:                    Número de Aluno:
+ * Nome:                    Número de Aluno:
+ **/
+
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
@@ -19,30 +27,22 @@ int checkInputValues(char numbers[2])
         }else if(numbers[0]== '9' && numbers[1] == '\0'){
             return 9;
         }
-        if (isdigit(numbers[i]))
+        if (!isdigit(numbers[i]))
         {
-            // printf("var1 = |%c| is a digit\n", numbers[i]);
-        }
-        else
-        {
-            // printf("var1 = |%c| is not a digit\n", numbers[i]);
             return -1;
         }
     }
-    // change the type of variable
+    // muda o tipo da variavel de char para int 
     result = atoi(numbers);
 
     printf("%d", result);
 
     if (result < 8 || result > 29)
     {
-        // printf("the value is not correct \n");
         return -2;
-        // ask again
     }
     else
     {
-        // printf("the value is correct \n");
         return result;
     }
     return result;
@@ -50,10 +50,12 @@ int checkInputValues(char numbers[2])
 
 void escreverVetor(int arrayOfValues[N])
 {
-
     for (int i = 0; i < N; i++)
     {
-        printf("-------- %d ---------", i);
+
+        printf("╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗\n");
+        printf("║                                                       Vai ficar na posiçao numero %d                                 ║\n",i);
+        printf("╠══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╣\n");
         char input[2];
         printf("introduza um numero\n");
         scanf("%2s", input);
@@ -63,16 +65,15 @@ void escreverVetor(int arrayOfValues[N])
         switch (valueFromCheck)
         {
         case -1:
-            printf("the value is not a dIgit \n");
+            printf("O valor introduzido nao é um numero \n");
             i--;
             continue;
         case -2:
-            printf("the value is not correct \n");
+            printf("O valor nao esta correto \n");
             i--;
             continue;
         default:
-            printf("the value is correct \n");
-            // add to total array
+            printf("O valor esta correto continue \n");
             arrayOfValues[i] = valueFromCheck;
             continue;
         }
@@ -103,6 +104,7 @@ void ordernarCrescente(int arrayOfValues[N])
             }
         }
     }
+    printf("o vetor odenado\n");
     mostrarVetor(arrayOfValues);
 }
 
@@ -121,7 +123,6 @@ void ordernarCrescente(int arrayOfValues[N])
                 printf("soma %d entre %d e %d\n", sumarray[i], arrayOfValues[i], arrayOfValues[j+1]);
             }
         }
-        printf("-__-__--_\n");
         for (int i = 0; i < N/2; i++)
         {
             printf("%d ", sumarray[i]);
@@ -134,18 +135,17 @@ void premutacaoElementos(int arrayOfValues[N])
     int matriz[N][N];
     int j = 0;
     int temporario = 0;
-    ; // create local variables to hold values for shuffle
 
     for (int z = 0; z < N; z++)
     {
-
         for (int i = N - 1; i > 0; i--)
-        {                           // for loop to shuffle
-            j = (rand() % (i + 1)); // randomise j for shuffle with Fisher Yates
+        {
+            j = (rand() % (i + 1));
             temporario = arrayOfValues[j];
             arrayOfValues[j] = arrayOfValues[i];
             arrayOfValues[i] = temporario;
         }
+        //adicionar a matriz feita a matriz total 20/20
         for (int i = 0; i < N; i++)
         {
             matriz[z][i] = arrayOfValues[i];
@@ -163,7 +163,7 @@ void premutacaoElementos(int arrayOfValues[N])
 void randomNumber(int arrayOfValues[N])
 {
     int result = arrayOfValues[(rand() % N)];
-    printf("----%d-----", result);
+    printf(" o Numero aleatorio do vetor é %d\n", result);
 }
 
 void coseno2half(int arrayOfValues[N])
@@ -176,7 +176,7 @@ void coseno2half(int arrayOfValues[N])
         double convert = (arrayOfValues[half + i] * PI) / 180;
         double result = cos(convert);
         arrayCos[i] = result;
-        printf("the number is %d and the cos is %f", arrayOfValues[half + i], arrayCos[i]);
+        printf("O numero é %d e o cos é %f\n", arrayOfValues[half + i], arrayCos[i]);
     }
 }
 
@@ -186,7 +186,7 @@ void iDivisivel3(int arrayOfValues[N])
     {
         if ((i % 3) == 0)
         {
-            printf(" i--> %d---n-->%d----\n", i, arrayOfValues[i]);
+            printf("A posiçao %d multipla de 3 tem o valor de %d\n", i, arrayOfValues[i]);
         }
     }
 }
@@ -195,7 +195,6 @@ void metade1metade2(int arrayOfValues[N])
 {
     for (int i = 0; i < N; i++)
     {
-        printf("-------- %d ---------", i);
         char input[2];
         printf("introduza um numero\n");
         scanf("%2s", input);
@@ -205,15 +204,15 @@ void metade1metade2(int arrayOfValues[N])
         switch (valueFromCheck)
         {
         case -1:
-            printf("the value is not a dIgit \n");
+            printf("O valor introduzido nao é um numero \n");
             i--;
             continue;
         case -2:
-            printf("the value is not correct \n");
+            printf("O valor nao esta correto \n");
             i--;
             continue;
         default:
-            printf("the value is correct \n");
+            printf("O valor esta correto continue \n");
             // add to total array
             if (N / 2 <= i)
             {
@@ -242,8 +241,7 @@ void minimoMultiploComum(int arrayofValues[N])
         }
         if (i == N - 1)
         {
-            //impar numero nao fazer nada
-            //printf("(%d)", a);
+
         }
         else
         {
@@ -286,7 +284,7 @@ void TranspostadaMatriz(int arrayMulti[M][M]){
             arrayT[j][i] = arrayMulti[i][j];
         }
     }
-    printf("array T\n");
+    printf("Matriz tranposta\n");
     for (int i = 0; i < M; i++)
     {
         for (int j = 0; j < M; j++)
